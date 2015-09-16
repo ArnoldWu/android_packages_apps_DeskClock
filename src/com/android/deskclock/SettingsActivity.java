@@ -109,8 +109,8 @@ public class SettingsActivity extends PreferenceActivity
         listPref.setOnPreferenceChangeListener(this);
 
         mAlarmIcon = (SwitchPreference) findPreference(KEY_SHOW_STATUS_BAR_ICON);
-        mAlarmIcon.setChecked(Settings.System.getInt(getContentResolver(),
-                Settings.System.SHOW_ALARM_ICON, 1) == 1);
+        // mAlarmIcon.setChecked(Settings.System.getInt(getContentResolver(),
+        //         Settings.System.SHOW_ALARM_ICON, 1) == 1);
     }
 
     @Override
@@ -174,8 +174,8 @@ public class SettingsActivity extends PreferenceActivity
         } else if (KEY_SHOW_STATUS_BAR_ICON.equals(pref.getKey())) {
             // Check if any alarms are active. If yes and
             // we allow showing the alarm icon, the icon will be shown.
-            Settings.System.putInt(getContentResolver(), Settings.System.SHOW_ALARM_ICON,
-                    (Boolean) newValue ? 1 : 0);
+            // Settings.System.putInt(getContentResolver(), Settings.System.SHOW_ALARM_ICON,
+            //         (Boolean) newValue ? 1 : 0);
         }
         return true;
     }

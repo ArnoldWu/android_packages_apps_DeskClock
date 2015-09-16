@@ -37,10 +37,8 @@
   <string name="cities_delete_city_failed">Não é possível eliminar a cidade</string>
   <string name="volume_buttons_summary">Pressionar os botões do volume <xliff:g id="action">%s</xliff:g></string>
   <string name="flip_action_title">Ação de rodar</string>
-  <string name="flip_action_summary" product="tablet">Rodar o tablet ao contrario <xliff:g id="action">%s</xliff:g></string>
   <string name="flip_action_summary" product="default">Rodar o telefone ao contrario <xliff:g id="action">%s</xliff:g></string>
   <string name="shake_action_title">Ação de agitar</string>
-  <string name="shake_action_summary" product="tablet">Agitar o tablet  <xliff:g id="action">%s</xliff:g></string>
   <string name="shake_action_summary" product="default">Agitar o telefone  <xliff:g id="action">%s</xliff:g></string>
   <string name="action_summary_snooze">ignora o alarme</string>
   <string name="action_summary_dismiss">suspende o alarme</string>
@@ -53,6 +51,5 @@
   <string name="alarm_select">Selecionar alarme</string>
   <string name="alarm_select_ringtone">Toque</string>
   <string name="alarm_select_external">Música</string>
-  <string name="ringtone_default">Toque predefinido</string>
   <string name="take_persistent_grant_uri_permission_failed_msg">Falha ao conceder permissão permanente para o toque</string>
 </resources>

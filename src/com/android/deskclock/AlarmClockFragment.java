@@ -25,8 +25,8 @@ import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.app.LoaderManager;
-import android.app.Profile;
-import android.app.ProfileManager;
+// import android.app.Profile;
+// import android.app.ProfileManager;
 import android.app.TimePickerDialog.OnTimeSetListener;
 import android.content.ContentResolver;
 import android.content.ContentUris;
@@ -143,12 +143,12 @@ public class AlarmClockFragment extends DeskClockFragment implements
 
     private FrameLayout mMainLayout;
 
-    private ProfileManager mProfileManager;
+    // private ProfileManager mProfileManager;
     private ProfilesObserver mProfileObserver;
     private AudioManager mAudioManager;
 
-    private final Uri PROFILES_SETTINGS_URI =
-            Settings.System.getUriFor(Settings.System.SYSTEM_PROFILES_ENABLED);
+    // private final Uri PROFILES_SETTINGS_URI =
+    //         Settings.System.getUriFor(Settings.System.SYSTEM_PROFILES_ENABLED);
 
     private static final int MSG_PROFILE_STATUS_CHANGE = 1000;
 
@@ -230,7 +230,7 @@ public class AlarmClockFragment extends DeskClockFragment implements
         }
 
         // Register profiles status
-        mProfileManager = (ProfileManager) getActivity().getSystemService(Context.PROFILE_SERVICE);
+        // mProfileManager = (ProfileManager) getActivity().getSystemService(Context.PROFILE_SERVICE);
         mProfileObserver = new ProfilesObserver(mHandler);
 
         mExpandInterpolator = new DecelerateInterpolator(EXPAND_DECELERATION);
@@ -368,9 +368,9 @@ public class AlarmClockFragment extends DeskClockFragment implements
         }
 
         // Update the profile status and register the profile observer
-        getActivity().getContentResolver().registerContentObserver(
-                PROFILES_SETTINGS_URI, false, mProfileObserver);
-        updateProfilesStatus();
+        // getActivity().getContentResolver().registerContentObserver(
+        //         PROFILES_SETTINGS_URI, false, mProfileObserver);
+        // updateProfilesStatus();
     }
 
     private void hideUndoBar(boolean animate, MotionEvent event) {
@@ -551,8 +551,8 @@ public class AlarmClockFragment extends DeskClockFragment implements
                     RingtoneManager.TYPE_ALARM);
             intent.putExtra(RingtoneManager.EXTRA_RINGTONE_SHOW_DEFAULT,
                     false);
-            intent.putExtra(RingtoneManager.EXTRA_RINGTONE_DIALOG_THEME,
-                    android.R.style.Theme_Material_Dialog);
+            // intent.putExtra(RingtoneManager.EXTRA_RINGTONE_DIALOG_THEME,
+            //         android.R.style.Theme_Material_Dialog);
             AlarmClockFragment.this.startActivityForResult(intent, REQUEST_CODE_RINGTONE);
         } else {
             final Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
@@ -631,12 +631,12 @@ public class AlarmClockFragment extends DeskClockFragment implements
     }
 
     private void launchProfilePicker(Alarm alarm) {
-        mSelectedAlarm = alarm;
-        final Intent intent = new Intent(ProfileManager.ACTION_PROFILE_PICKER);
+        // mSelectedAlarm = alarm;
+        // final Intent intent = new Intent(ProfileManager.ACTION_PROFILE_PICKER);
 
-        intent.putExtra(ProfileManager.EXTRA_PROFILE_EXISTING_UUID, alarm.profile.toString());
-        intent.putExtra(ProfileManager.EXTRA_PROFILE_SHOW_NONE, true);
-        startActivityForResult(intent, REQUEST_CODE_PROFILE);
+        // intent.putExtra(ProfileManager.EXTRA_PROFILE_EXISTING_UUID, alarm.profile.toString());
+        // intent.putExtra(ProfileManager.EXTRA_PROFILE_SHOW_NONE, true);
+        // startActivityForResult(intent, REQUEST_CODE_PROFILE);
     }
 
     private Uri getRingtoneUri(Intent intent) {
@@ -667,40 +667,43 @@ public class AlarmClockFragment extends DeskClockFragment implements
     }
 
     private void saveProfile(Intent intent) {
-        final String uuid = intent.getStringExtra(ProfileManager.EXTRA_PROFILE_PICKED_UUID);
-        if (uuid != null) {
-            try {
-                mSelectedAlarm.profile = UUID.fromString(uuid);
-            } catch (IllegalArgumentException ex) {
-                mSelectedAlarm.profile = ProfileManager.NO_PROFILE;
-            }
-        } else {
-            mSelectedAlarm.profile = ProfileManager.NO_PROFILE;
-        }
-        asyncUpdateAlarm(mSelectedAlarm, false);
+        // final String uuid = intent.getStringExtra(ProfileManager.EXTRA_PROFILE_PICKED_UUID);
+        // if (uuid != null) {
+        //     try {
+        //         mSelectedAlarm.profile = UUID.fromString(uuid);
+        //     } catch (IllegalArgumentException ex) {
+        //         mSelectedAlarm.profile = ProfileManager.NO_PROFILE;
+        //     }
+        // } else {
+        //     mSelectedAlarm.profile = ProfileManager.NO_PROFILE;
+        // }
+        // asyncUpdateAlarm(mSelectedAlarm, false);
     }
 
     private boolean isProfilesEnabled() {
-        return Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
+        return false;
+        // return Settings.System.getInt(getActivity().getContentResolver(),
+        //         Settings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
     }
 
     private String getProfileName(Alarm alarm) {
-        if (!isProfilesEnabled() || alarm.profile.equals(ProfileManager.NO_PROFILE)) {
-            return getString(R.string.profile_no_selected);
-        }
-        Profile profile = mProfileManager.getProfile(alarm.profile);
-        if (profile == null) {
-            return getString(R.string.profile_no_selected);
-        }
-        return profile.getName();
+        return getString(R.string.profile_no_selected);
+        // if (!isProfilesEnabled() || alarm.profile.equals(ProfileManager.NO_PROFILE)) {
+        //     return getString(R.string.profile_no_selected);
+        // }
+        // // Profile profile = mProfileManager.getProfile(alarm.profile);
+        // Profile profile = null;
+        // if (profile == null) {
+        //     return getString(R.string.profile_no_selected);
+        // }
+        // return profile.getName();
     }
 
     private void updateProfilesStatus() {
         // Need to refresh the data
-        if (mAdapter != null) {
-            mAdapter.notifyDataSetChanged();
-        }
+        // if (mAdapter != null) {
+        //     mAdapter.notifyDataSetChanged();
+        // }
     }
 
     @Override
@@ -732,10 +735,10 @@ public class AlarmClockFragment extends DeskClockFragment implements
         @Override
         public void onChange(boolean selfChange, Uri uri) {
             if (uri == null) return;
-            if (PROFILES_SETTINGS_URI.equals(uri)) {
-                mHandler.removeMessages(MSG_PROFILE_STATUS_CHANGE);
-                mHandler.sendEmptyMessage(MSG_PROFILE_STATUS_CHANGE);
-            }
+            // if (PROFILES_SETTINGS_URI.equals(uri)) {
+            //     mHandler.removeMessages(MSG_PROFILE_STATUS_CHANGE);
+            //     mHandler.sendEmptyMessage(MSG_PROFILE_STATUS_CHANGE);
+            // }
         }
     }
 
@@ -1343,11 +1346,11 @@ public class AlarmClockFragment extends DeskClockFragment implements
                                 || uri.getAuthority().equals(Utils.DOC_DOWNLOAD)
                                 || uri.getAuthority().equals(Utils.DOC_EXTERNAL)) {
                             title = getDisplayNameFromDatabase(mContext,uri);
-                        } else if (uri.isPathPrefixMatch(MediaStore.Audio.Playlists.EXTERNAL_CONTENT_URI)) {
-                            Cursor c = getActivity().getContentResolver().query(uri, new String[] {MediaStore.Audio.Playlists.NAME}, null, null, null);
-                            if (c.moveToFirst()) {
-                                title = c.getString(0);
-                            }
+                        // } else if (uri.isPathPrefixMatch(MediaStore.Audio.Playlists.EXTERNAL_CONTENT_URI)) {
+                        //     Cursor c = getActivity().getContentResolver().query(uri, new String[] {MediaStore.Audio.Playlists.NAME}, null, null, null);
+                        //     if (c.moveToFirst()) {
+                        //         title = c.getString(0);
+                        //     }
                         } else {
                             Ringtone ringTone = RingtoneManager.getRingtone(mContext, uri);
                             if (ringTone != null) {

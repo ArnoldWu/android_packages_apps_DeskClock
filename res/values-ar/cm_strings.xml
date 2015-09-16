@@ -36,10 +36,8 @@
   <string name="cities_delete_city_msg">هل تريد حذف <xliff:g id="city">%s</xliff:g>؟</string>
   <string name="cities_delete_city_failed">لا يمكن حذف المدينة</string>
   <string name="flip_action_title">انعكاس العمل</string>
-  <string name="flip_action_summary" product="tablet">بدل الى الكمبيوتر اللوحي أسفل سوف <xliff:g id="action"> %s </xliff:g></string>
   <string name="flip_action_summary" product="default">بدل الى الهاتف أسفل <xliff:g id="action"> %s </xliff:g></string>
   <string name="shake_action_title">اهتز يعمل</string>
-  <string name="shake_action_summary" product="tablet">تهتز إرادة الكمبيوتر المحمول <xliff:g id="action"> %s </xliff:g></string>
   <string name="shake_action_summary" product="default">تهتز إرادة الهاتف <xliff:g id="action"> %s </xliff:g></string>
   <string name="action_summary_do_nothing">لا تفعل شيئا</string>
   <string name="alarm_picker_title">اختر نوع التنبيه</string>

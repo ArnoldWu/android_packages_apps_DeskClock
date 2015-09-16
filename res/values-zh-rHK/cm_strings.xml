@@ -36,10 +36,8 @@
   <string name="cities_delete_city_msg">您要刪除<xliff:g id="city">%s</xliff:g>嗎？</string>
   <string name="cities_delete_city_failed">無法刪除城市</string>
   <string name="flip_action_title">翻轉操作</string>
-  <string name="flip_action_summary" product="tablet">翻轉平板電腦將<xliff:g id="action">%s</xliff:g></string>
   <string name="flip_action_summary" product="default">翻轉電話將<xliff:g id="action">%s</xliff:g></string>
   <string name="shake_action_title">搖動操作</string>
-  <string name="shake_action_summary" product="tablet">搖動平板電腦將<xliff:g id="action">%s</xliff:g></string>
   <string name="shake_action_summary" product="default">搖動電話將<xliff:g id="action">%s</xliff:g></string>
   <string name="action_summary_do_nothing">什麼都不做</string>
   <string name="alarm_picker_title">選擇鈴響類型</string>
@@ -49,5 +47,4 @@
   <string name="alarm_select">選擇鬧鐘</string>
   <string name="alarm_select_ringtone">鈴聲</string>
   <string name="alarm_select_external">音樂</string>
-  <string name="ringtone_default">預設鈴聲</string>
 </resources>

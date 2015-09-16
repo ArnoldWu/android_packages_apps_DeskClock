@@ -36,10 +36,8 @@
   <string name="cities_delete_city_msg">คุณต้องการลบ <xliff:g id="city">%s</xliff:g>?</string>
   <string name="cities_delete_city_failed">ไม่สามารถลบเมืองได้</string>
   <string name="flip_action_title">การพลิก</string>
-  <string name="flip_action_summary" product="tablet">การคว่ำแท็บเล็ตของคุณจะ<xliff:g id="action">%s</xliff:g></string>
   <string name="flip_action_summary" product="default">การคว่ำโทรศัพท์มือถือของคุณจะ<xliff:g id="action">%s</xliff:g></string>
   <string name="shake_action_title">การเขย่า</string>
-  <string name="shake_action_summary" product="tablet">เมื่อเขย่าจะ <xliff:g id="action">%s</xliff:g></string>
   <string name="shake_action_summary" product="default">เมื่อเขย่าจะ <xliff:g id="action">%s</xliff:g></string>
   <string name="action_summary_do_nothing">ไม่ทำอะไร</string>
   <string name="alarm_picker_title">เลือกชนิดการปลุก</string>
@@ -49,6 +47,5 @@
   <string name="alarm_select">เลือกปลุก</string>
   <string name="alarm_select_ringtone">เสียง​เรียก​เข้า</string>
   <string name="alarm_select_external">เพลง</string>
-  <string name="ringtone_default">เสียงเรียกเข้าเริ่มต้น</string>
   <string name="take_persistent_grant_uri_permission_failed_msg">ไม่สามารถใช้เสียงเรียกเข้าได้เนื่องจากไม่ได้รับอนุญาต</string>
 </resources>

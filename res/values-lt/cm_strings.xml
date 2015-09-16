@@ -37,10 +37,8 @@
   <string name="cities_delete_city_failed">Negalima ištrinti miesto</string>
   <string name="volume_buttons_summary">Paspaudus garsumo mygtukus <xliff:g id="action">%s</xliff:g></string>
   <string name="flip_action_title">Apvertimo veiksmas</string>
-  <string name="flip_action_summary" product="tablet">Apverčiant planšetinį kompiuterį <xliff:g id="action">%s</xliff:g></string>
   <string name="flip_action_summary" product="default">Apverčiant telefoną <xliff:g id="action">%s</xliff:g></string>
   <string name="shake_action_title">Purtymo veiksmas</string>
-  <string name="shake_action_summary" product="tablet">Purtant planšetinį kompiuterį <xliff:g id="action">%s</xliff:g></string>
   <string name="shake_action_summary" product="default">Purtant telefoną <xliff:g id="action">%s</xliff:g></string>
   <string name="action_summary_snooze">snausti signalą</string>
   <string name="action_summary_dismiss">atsisakyti signalo</string>
@@ -53,6 +51,5 @@
   <string name="alarm_select">Pasirinkti signalą</string>
   <string name="alarm_select_ringtone">Skambėjimo tonas</string>
   <string name="alarm_select_external">Muzika</string>
-  <string name="ringtone_default">Numatytasis skambėjimo stonas</string>
   <string name="take_persistent_grant_uri_permission_failed_msg">Nepavyko nuolat suteikti leidimo skambėjimo tonui</string>
 </resources>

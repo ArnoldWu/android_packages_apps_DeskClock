@@ -54,14 +54,12 @@
     <string name="flip_action_title">Flip action</string>
 
     <!-- Setting summary for the flip action setting. -->
-    <string name="flip_action_summary" product="tablet">Flipping the tablet down will <xliff:g id="action">%s</xliff:g></string>
     <string name="flip_action_summary" product="default">Flipping the phone down will <xliff:g id="action">%s</xliff:g></string>
 
     <!-- Setting title for the shake action setting. -->
     <string name="shake_action_title">Shake action</string>
 
     <!-- Setting summary for the shake action setting. -->
-    <string name="shake_action_summary" product="tablet">Shaking the tablet will <xliff:g id="action">%s</xliff:g></string>
     <string name="shake_action_summary" product="default">Shaking the phone will <xliff:g id="action">%s</xliff:g></string>
 
     <!-- Summary texts for shake and flip actions -->
@@ -88,7 +86,6 @@
     <string name="alarm_select_external">Music</string>
 
     <!-- Ringtone selection default -->
-    <string name="ringtone_default">Default ringtone</string>
 
     <!-- Message that describe an error trying to take a persistent grant permission for an uri ringtone -->
     <string name="take_persistent_grant_uri_permission_failed_msg">Failed to take persistent grant permission for ringtone</string>

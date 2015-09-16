@@ -21,7 +21,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.PowerManager.WakeLock;
-import android.os.SystemProperties;
+// import android.os.SystemProperties;
 import android.preference.PreferenceManager;
 
 import com.android.deskclock.alarms.AlarmStateManager;
@@ -69,9 +69,9 @@ public class AlarmInitReceiver extends BroadcastReceiver {
                     boolean poweronAlert = context.getResources()
                             .getBoolean(R.bool.config_poweron_alert);
                     if (poweronAlert) {
-                        if(SystemProperties.getBoolean(PROP_BOOT_MODE, false)) {
-                            AlarmStateManager.setRtcPowerUp(context, true);
-                        }
+                        // if(SystemProperties.getBoolean(PROP_BOOT_MODE, false)) {
+                        //     AlarmStateManager.setRtcPowerUp(context, true);
+                        // }
                     }
                 }
 

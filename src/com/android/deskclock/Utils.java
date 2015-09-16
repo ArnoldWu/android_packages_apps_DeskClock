@@ -38,7 +38,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Handler;
 import android.os.SystemClock;
-import android.os.SystemProperties;
+// import android.os.SystemProperties;
 import android.preference.PreferenceManager;
 import android.provider.DocumentsContract.Document;
 import android.provider.MediaStore;
@@ -672,9 +672,9 @@ public class Utils {
     }
 
     public static String getTitleColumnNameForUri(Uri uri) {
-        if (uri.isPathPrefixMatch(MediaStore.Audio.Playlists.EXTERNAL_CONTENT_URI)) {
-            return MediaStore.Audio.Playlists.NAME;
-        }
+        // if (uri.isPathPrefixMatch(MediaStore.Audio.Playlists.EXTERNAL_CONTENT_URI)) {
+        //     return MediaStore.Audio.Playlists.NAME;
+        // }
         if (DOC_EXTERNAL.equals(uri.getAuthority())) {
             return Document.COLUMN_DISPLAY_NAME;
         }
@@ -714,7 +714,8 @@ public class Utils {
     }
 
     public static Uri getSystemDefaultAlarm(Context c) {
-        String defaultAlarm = SystemProperties.get(PROP_ALARM, null);
+        // String defaultAlarm = SystemProperties.get(PROP_ALARM, null);
+        String defaultAlarm = null;
         if (defaultAlarm == null) {
             defaultAlarm = ""; //If system prop isn't set return any alarm
         }

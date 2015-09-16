@@ -37,10 +37,8 @@
   <string name="cities_delete_city_failed">Nemožno vymazať mesto</string>
   <string name="volume_buttons_summary">Stlačením tlačidiel hlasitosti sa <xliff:g id="action">%s</xliff:g></string>
   <string name="flip_action_title">Akcia pri prevrátení</string>
-  <string name="flip_action_summary" product="tablet">Otočením tabletu sa <xliff:g id="action">%s</xliff:g></string>
   <string name="flip_action_summary" product="default">Otočením telefónu sa <xliff:g id="action">%s</xliff:g></string>
   <string name="shake_action_title">Akcia pri zatrasení</string>
-  <string name="shake_action_summary" product="tablet">Zatrasením tabletu sa <xliff:g id="action">%s</xliff:g></string>
   <string name="shake_action_summary" product="default">Zatrasením telefónu sa <xliff:g id="action">%s</xliff:g></string>
   <string name="action_summary_snooze">odloží budík</string>
   <string name="action_summary_dismiss">vypne budík</string>
@@ -53,6 +51,5 @@
   <string name="alarm_select">Vyberte budík</string>
   <string name="alarm_select_ringtone">Zvonenie</string>
   <string name="alarm_select_external">Hudba</string>
-  <string name="ringtone_default">Predvolené zvonenie</string>
   <string name="take_persistent_grant_uri_permission_failed_msg">Nepodarilo sa získať trvalé udelenie povolenia pre zvonenie</string>
 </resources>

@@ -298,7 +298,8 @@ public class CitiesActivity extends Activity implements OnCheckedChangeListener,
 
             Resources res = context.getResources();
             mNormalCityFgColor = res.getColor(R.color.clock_white);
-            mUserDefinedCityFgColor = res.getColor(R.color.red);
+            // mUserDefinedCityFgColor = res.getColor(R.color.red);
+            mUserDefinedCityFgColor = res.getColor(R.color.clock_gray);
 
             mPattern24 = DateFormat.getBestDateTimePattern(Locale.getDefault(), "Hm");
 

@@ -278,17 +278,19 @@ public class AlarmMultiPlayer implements MediaPlayer.OnCompletionListener {
         }
 
         String columnName = null;
-        if (uri.isPathPrefixMatch(Audio.Media.EXTERNAL_CONTENT_URI)
-                || uri.isPathPrefixMatch(Audio.Media.INTERNAL_CONTENT_URI)) {
-            columnName = Audio.Media._ID;
-        } else if (uri.isPathPrefixMatch(Audio.Playlists.EXTERNAL_CONTENT_URI)
-                || uri.isPathPrefixMatch(Audio.Playlists.INTERNAL_CONTENT_URI)) {
-            long playlist_id = Long.parseLong(uri.getLastPathSegment());
-            uri = Audio.Playlists.Members.getContentUri("external", playlist_id);
-            columnName = Audio.Playlists.Members.AUDIO_ID;
-        } else {
-            LogUtils.e("AlarmMultiPlayer: Unknown uri: " + uri.toString());
-        }
+        // if (uri.isPathPrefixMatch(Audio.Media.EXTERNAL_CONTENT_URI)
+        //         || uri.isPathPrefixMatch(Audio.Media.INTERNAL_CONTENT_URI)) {
+        //     columnName = Audio.Media._ID;
+        // } else if (uri.isPathPrefixMatch(Audio.Playlists.EXTERNAL_CONTENT_URI)
+        //         || uri.isPathPrefixMatch(Audio.Playlists.INTERNAL_CONTENT_URI)) {
+        //     long playlist_id = Long.parseLong(uri.getLastPathSegment());
+        //     uri = Audio.Playlists.Members.getContentUri("external", playlist_id);
+        //     columnName = Audio.Playlists.Members.AUDIO_ID;
+        // } else {
+        //     LogUtils.e("AlarmMultiPlayer: Unknown uri: " + uri.toString());
+        // }
+        LogUtils.e("AlarmMultiPlayer: Unknown uri: " + uri.toString());
+        
         mIsExternal = uri.toString().contains("external");
         mCursor = mContext.getContentResolver().query(uri, null, null, null, null);
         if (mCursor == null) {

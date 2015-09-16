@@ -264,12 +264,12 @@ public final class AlarmStateManager extends BroadcastReceiver {
         if (Utils.isKitKatOrLater()) {
             am.setExact(AlarmManager.RTC_WAKEUP, timeInMillis, pendingIntent);
 
-            am.setExact(AlarmManager.RTC_POWEROFF_WAKEUP, instance.getAlarmTime().getTimeInMillis(),
-                    pendingPowerOffIntent);
+            // am.setExact(AlarmManager.RTC_POWEROFF_WAKEUP, instance.getAlarmTime().getTimeInMillis(),
+            //         pendingPowerOffIntent);
         } else {
             am.set(AlarmManager.RTC_WAKEUP, timeInMillis, pendingIntent);
-            am.set(AlarmManager.RTC_POWEROFF_WAKEUP, instance.getAlarmTime().getTimeInMillis(),
-                    pendingPowerOffIntent);
+            // am.set(AlarmManager.RTC_POWEROFF_WAKEUP, instance.getAlarmTime().getTimeInMillis(),
+            //         pendingPowerOffIntent);
         }
     }
 

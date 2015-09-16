@@ -37,10 +37,8 @@
   <string name="cities_delete_city_failed">Неможливо видалити місто</string>
   <string name="volume_buttons_summary">Натиск на кнопку гучності <xliff:g id="action">%s</xliff:g></string>
   <string name="flip_action_title">Дії перевертання</string>
-  <string name="flip_action_summary" product="tablet">Переверніть планшет вниз, щоб <xliff:g id="action">%s</xliff:g></string>
   <string name="flip_action_summary" product="default">Переверніть телефон вниз, щоб <xliff:g id="action">%s</xliff:g></string>
   <string name="shake_action_title">Дії при струшуванні</string>
-  <string name="shake_action_summary" product="tablet">Струсніть планшет, щоб <xliff:g id="action">%s</xliff:g></string>
   <string name="shake_action_summary" product="default">Струсніть телефон, щоб <xliff:g id="action">%s</xliff:g></string>
   <string name="action_summary_snooze">відкладе будильник</string>
   <string name="action_summary_dismiss">відключить будильник</string>
@@ -53,6 +51,5 @@
   <string name="alarm_select">Обрати сигнал</string>
   <string name="alarm_select_ringtone">Мелодія</string>
   <string name="alarm_select_external">Музика</string>
-  <string name="ringtone_default">Типова мелодія</string>
   <string name="take_persistent_grant_uri_permission_failed_msg">Не вдалося задати мелодію як сигнал</string>
 </resources>

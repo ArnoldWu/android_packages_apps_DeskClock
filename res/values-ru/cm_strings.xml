@@ -37,10 +37,8 @@
   <string name="cities_delete_city_failed">Не удаётся удалить город</string>
   <string name="volume_buttons_summary">При нажатии на кнопки громкости <xliff:g id="action">%s</xliff:g></string>
   <string name="flip_action_title">Переворот</string>
-  <string name="flip_action_summary" product="tablet">При переворачивании планшета <xliff:g id="action">%s</xliff:g></string>
   <string name="flip_action_summary" product="default">При переворачивании телефона <xliff:g id="action">%s</xliff:g></string>
   <string name="shake_action_title">Встряхивание</string>
-  <string name="shake_action_summary" product="tablet">При встряхивании планшета <xliff:g id="action">%s</xliff:g></string>
   <string name="shake_action_summary" product="default">При встряхивании телефона <xliff:g id="action">%s</xliff:g></string>
   <string name="action_summary_snooze">отложить сигнал будильника</string>
   <string name="action_summary_dismiss">отключить будильник</string>
@@ -53,6 +51,5 @@
   <string name="alarm_select">Выбор сигнала</string>
   <string name="alarm_select_ringtone">Рингтон</string>
   <string name="alarm_select_external">Музыка</string>
-  <string name="ringtone_default">Мелодия по умолчанию</string>
   <string name="take_persistent_grant_uri_permission_failed_msg">Не удалось задать мелодию в качестве сигнала</string>
 </resources>

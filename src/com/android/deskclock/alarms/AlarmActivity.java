@@ -627,10 +627,10 @@ public class AlarmActivity extends Activity implements View.OnClickListener, Vie
      * Implement power off function immediately.
      */
     private void powerOff() {
-        Intent requestShutdown = new Intent(Intent.ACTION_REQUEST_SHUTDOWN);
-        requestShutdown.putExtra(Intent.EXTRA_KEY_CONFIRM, false);
-        requestShutdown.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        mContext.startActivity(requestShutdown);
+        // Intent requestShutdown = new Intent(Intent.ACTION_REQUEST_SHUTDOWN);
+        // requestShutdown.putExtra(Intent.EXTRA_KEY_CONFIRM, false);
+        // requestShutdown.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        // mContext.startActivity(requestShutdown);
     }
 
     private void showPowerOffDialog() {

@@ -37,10 +37,8 @@
   <string name="cities_delete_city_failed">Stad kann net geläscht ginn</string>
   <string name="volume_buttons_summary">Op d\'Lautstäerktknäppercher drécke fir ze <xliff:g id="action">%s</xliff:g></string>
   <string name="flip_action_title">Aktioun beim Dréinen</string>
-  <string name="flip_action_summary" product="tablet">Den Tablet no ënnen dréine wäert <xliff:g id="action">%s</xliff:g></string>
   <string name="flip_action_summary" product="default">Den Telefon no ënnen dréine wäert <xliff:g id="action">%s</xliff:g></string>
   <string name="shake_action_title">Aktioun beim Rëselen</string>
-  <string name="shake_action_summary" product="tablet">Den Tablet rësele wäert <xliff:g id="action">%s</xliff:g></string>
   <string name="shake_action_summary" product="default">Den Telefon rësele wäert <xliff:g id="action">%s</xliff:g></string>
   <string name="action_summary_snooze">Wecker näipen</string>
   <string name="action_summary_dismiss">Alarm verwerfen</string>
@@ -53,6 +51,5 @@
   <string name="alarm_select">Alarmtoun auswielen</string>
   <string name="alarm_select_ringtone">Schelltoun</string>
   <string name="alarm_select_external">Musek</string>
-  <string name="ringtone_default">Standard-Schelltoun</string>
   <string name="take_persistent_grant_uri_permission_failed_msg">Konnt keng dauerhaf Erlabnis kréie fir de Schelltoun z\'änneren</string>
 </resources>

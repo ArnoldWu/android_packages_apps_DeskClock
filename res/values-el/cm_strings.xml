@@ -37,10 +37,8 @@
   <string name="cities_delete_city_failed">Δεν είναι δυνατή η διαγραφή της πόλης</string>
   <string name="volume_buttons_summary">Πιέζοντας τα πλήκτρα ήχου <xliff:g id="action">%s</xliff:g></string>
   <string name="flip_action_title">Ενέργεια αναποδογυρίσματος</string>
-  <string name="flip_action_summary" product="tablet">Αναποδογυρίζοντας το tablet <xliff:g id="action">%s</xliff:g></string>
   <string name="flip_action_summary" product="default">Αναποδογυρίζοντας το τηλέφωνο <xliff:g id="action">%s</xliff:g></string>
   <string name="shake_action_title">Ενέργεια κουνήματος</string>
-  <string name="shake_action_summary" product="tablet">Κουνώντας το tablet <xliff:g id="action">%s</xliff:g></string>
   <string name="shake_action_summary" product="default">Κουνώντας το τηλέφωνο <xliff:g id="action">%s</xliff:g></string>
   <string name="action_summary_snooze">θα αναβάλλετε το ξυπνητήρι</string>
   <string name="action_summary_dismiss">θα παραβλέπετε το ξυπνητήρι</string>
@@ -53,6 +51,5 @@
   <string name="alarm_select">Επιλογή ξυπνητηριού</string>
   <string name="alarm_select_ringtone">Ήχοι κλήσης</string>
   <string name="alarm_select_external">Μουσική</string>
-  <string name="ringtone_default">Προεπιλεγμένος ήχος</string>
   <string name="take_persistent_grant_uri_permission_failed_msg">Αποτυχία λήψης μόνιμης παροχής άδειας για τον ήχο κλήσης</string>
 </resources>

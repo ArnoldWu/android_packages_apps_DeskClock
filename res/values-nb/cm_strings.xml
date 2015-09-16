@@ -37,10 +37,8 @@
   <string name="cities_delete_city_failed">Kan ikke slette byen</string>
   <string name="volume_buttons_summary">Trykk på volum knapper vil <xliff:g id="action">%s</xliff:g></string>
   <string name="flip_action_title">Vend handling</string>
-  <string name="flip_action_summary" product="tablet">vende tabletten ned vil<xliff:g id="action">%s</xliff:g></string>
   <string name="flip_action_summary" product="default">Vende telefonen ned vil <xliff:g id="action">%s</xliff:g></string>
   <string name="shake_action_title">Riste handling</string>
-  <string name="shake_action_summary" product="tablet">Riste tabletten vil <xliff:g id="action">%s</xliff:g></string>
   <string name="shake_action_summary" product="default">Riste telefonen vil <xliff:g id="action">%s</xliff:g></string>
   <string name="action_summary_snooze">utsett alarmen</string>
   <string name="action_summary_dismiss">avvise alarmen</string>
@@ -53,6 +51,5 @@
   <string name="alarm_select">Velg alarm</string>
   <string name="alarm_select_ringtone">Ringetone</string>
   <string name="alarm_select_external">Musikk</string>
-  <string name="ringtone_default">Standard ringetone</string>
   <string name="take_persistent_grant_uri_permission_failed_msg">Klarte ikke å ta over riktige tillatelser for ringetone</string>
 </resources>

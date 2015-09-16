@@ -19,8 +19,8 @@
 package com.android.deskclock.alarms;
 
 import android.app.PendingIntent;
-import android.app.Profile;
-import android.app.ProfileManager;
+// import android.app.Profile;
+// import android.app.ProfileManager;
 import android.app.Service;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -128,40 +128,43 @@ public class AlarmService extends Service {
     };
 
     private void changeToProfile(final Context context, final AlarmInstance instance) {
+        LogUtils.v("Alarm doesn't define a profile to change to");
+        return;
+        
         // The alarm is defined to change the active profile?
-        if (instance.mProfile.equals(ProfileManager.NO_PROFILE)) {
-            LogUtils.v("Alarm doesn't define a profile to change to");
-            return;
-        }
+        // if (instance.mProfile.equals(ProfileManager.NO_PROFILE)) {
+        //     LogUtils.v("Alarm doesn't define a profile to change to");
+        //     return;
+        // }
 
-        final ProfileManager profileManager =
-                (ProfileManager) context.getSystemService(Context.PROFILE_SERVICE);
-        boolean isProfilesEnabled = Settings.System.getInt(context.getContentResolver(),
-                Settings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
-        if (!isProfilesEnabled) {
-            LogUtils.v("Profiles are disabled");
-            return;
-        }
+        // final ProfileManager profileManager =
+        //         (ProfileManager) context.getSystemService(Context.PROFILE_SERVICE);
+        // boolean isProfilesEnabled = Settings.System.getInt(context.getContentResolver(),
+        //         Settings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
+        // if (!isProfilesEnabled) {
+        //     LogUtils.v("Profiles are disabled");
+        //     return;
+        // }
 
-        // Ensure that the profile still exists
-        Profile profile = profileManager.getProfile(instance.mProfile);
-        if (profile == null) {
-            LogUtils.e("The profile \"" + instance.mProfile
-                    + "\" does not exist. Can't change to this profile");
-            return;
-        }
+        // // Ensure that the profile still exists
+        // Profile profile = profileManager.getProfile(instance.mProfile);
+        // if (profile == null) {
+        //     LogUtils.e("The profile \"" + instance.mProfile
+        //             + "\" does not exist. Can't change to this profile");
+        //     return;
+        // }
 
-        // Is the current profile different?
-        Profile activeProfile = profileManager.getActiveProfile();
-        if (activeProfile == null || !profile.getUuid().equals(activeProfile.getUuid())) {
-            // Change to profile
-            LogUtils.i("Changing to profile \"" + profile.getName() + "\" (" + profile.getUuid()
-                    + ") requested by alarm \"" + instance.mLabel + "\" (" + instance.mId + ")");
-            profileManager.setActiveProfile(profile.getUuid());
-        } else {
-            LogUtils.v("The profile \"" + profile.getName() + "\" (" + profile.getUuid()
-                    + " is already active. No need to change to");
-        }
+        // // Is the current profile different?
+        // Profile activeProfile = profileManager.getActiveProfile();
+        // if (activeProfile == null || !profile.getUuid().equals(activeProfile.getUuid())) {
+        //     // Change to profile
+        //     LogUtils.i("Changing to profile \"" + profile.getName() + "\" (" + profile.getUuid()
+        //             + ") requested by alarm \"" + instance.mLabel + "\" (" + instance.mId + ")");
+        //     profileManager.setActiveProfile(profile.getUuid());
+        // } else {
+        //     LogUtils.v("The profile \"" + profile.getName() + "\" (" + profile.getUuid()
+        //             + " is already active. No need to change to");
+        // }
     }
 
     private void startAlarm(AlarmInstance instance) {
