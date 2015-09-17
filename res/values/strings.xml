@@ -18,7 +18,7 @@
     <!-- -->
     <!-- Label shown on launcher icon -->
     <!-- Label for the this application displayed on-screen when this application must be represented to the user. -->
-    <string name="app_label">Clock</string>
+    <string name="app_label">AClock</string>
 
     <!-- Title for AlarmClock activity -->
     <!-- Label for the Alarms activity displayed on-screen when that activity must be represented to the user. -->
@@ -214,7 +214,7 @@
     <string name="clock_instructions">Choose a clock</string>
 
     <!-- Label for analog clock gadget displayed on-screen when that gadget is represented to the user. -->
-    <string name="analog_gadget">Analog clock</string>
+    <string name="analog_gadget">AClock Analog clock</string>
 
     <!-- Help activity name -->
     <string name="help">help</string>
@@ -832,7 +832,7 @@
     <string name="city_delete_confirmation">Remove this city?</string>
 
     <!-- Label for digital clock gadget displayed on-screen when that gadget is represented to the user. -->
-    <string name="digital_gadget">Digital clock</string>
+    <string name="digital_gadget">AClock Digital clock</string>
 
     <!-- format strings for clocks -->
     <string name="clock_24_hours_format" translatable="false">kk&#58;mm</string>

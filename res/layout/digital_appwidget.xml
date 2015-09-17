@@ -14,11 +14,14 @@
      limitations under the License.
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/digital_appwidget"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal|top"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/digital_appwidget_background"
+    tools:showIn="@layout/digital_appwidget">
 
     <include layout="@layout/digital_widget_time"
         android:id="@+id/digital_clock"
@@ -27,7 +30,13 @@
         android:layout_gravity="center_horizontal|top"
          />
 
-      <ListView
+    <TextView
+        android:layout_width="585dp"
+        android:layout_height="65dp"
+        android:text="New Test Text!!!!"
+        android:id="@+id/textView" />
+
+    <ListView
           android:id="@+id/digital_appwidget_listview"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"

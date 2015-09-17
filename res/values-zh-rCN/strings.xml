@@ -16,7 +16,7 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_label" msgid="6674495003718166674">"时钟"</string>
+    <string name="app_label" msgid="6674495003718166674">"A时钟"</string>
     <string name="alarm_list_title" msgid="7589940465292950600">"闹钟"</string>
     <string name="add_alarm" msgid="5976616107390962899">"添加闹钟"</string>
     <string name="menu_desk_clock" msgid="3241995064554071588">"座钟"</string>
@@ -83,7 +83,7 @@
     <string name="never" msgid="54104287800571769">"永不"</string>
     <string name="day_concat" msgid="971998564991636532">", "</string>
     <string name="clock_instructions" msgid="2656876819515011590">"选择时钟"</string>
-    <string name="analog_gadget" msgid="1670505720837152766">"指针时钟"</string>
+    <string name="analog_gadget" msgid="1670505720837152766">"A 指针时钟"</string>
     <string name="help" msgid="7786263119482654015">"帮助"</string>
     <string name="settings" msgid="5849739030579520686">"设置"</string>
     <string name="snooze_duration_title" msgid="1097309861110780483">"暂停时长"</string>
@@ -341,7 +341,7 @@
   </plurals>
     <string name="timer_delete_confirmation" msgid="2815524107015816453">"是否删除此计时器？"</string>
     <string name="city_delete_confirmation" msgid="1783441538785676299">"是否删除此城市？"</string>
-    <string name="digital_gadget" msgid="2326954556720571358">"数字时钟"</string>
+    <string name="digital_gadget" msgid="2326954556720571358">"A 数字时钟"</string>
     <string name="no_alarms" msgid="6429431324842022917">"没有闹钟"</string>
     <string name="no_alarms_set" msgid="4887558279496044764">"未设置闹钟"</string>
     <string name="no_upcoming_alarms" msgid="2889840988069436254">"没有预定的闹钟"</string>
