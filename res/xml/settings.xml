@@ -52,7 +52,7 @@
             android:defaultValue="@string/default_auto_silence_value"
             android:dialogTitle="@string/auto_silence_title" />
 
-       <com.android.deskclock.SnoozeLengthDialog
+       <com.autils.deskclock.SnoozeLengthDialog
             android:key="snooze_duration"
             android:title="@string/snooze_duration_title"
             android:defaultValue="10"/>
